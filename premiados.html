@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="sortcut icon" href="imagens/favicon.ico" type="image/x-icon" />
+    <title>Dudomon - Premiados</title>
+</head>
+<body>
+  <nav id="menu_navegacao">
+    <section class="menu_navegacao_pc">
+      <ul>
+        <h1 class="logo_menu">Dudomon</h1>
+        <li class="list_nav">
+          <a href="index.html">
+            <span class="icon"><i class="fas fa-home"></i></span>
+            <span class="titulo_nav">Home</span>
+          </a>
+        </li>
+        <li class="list_nav active">
+          <a href="premiados.html">
+            <span class="icon"><i class="fas fa-search-dollar"></i></span>
+            <span class="titulo_nav">Premiados</span>
+          </a>
+        </li>
+        <li class="list_nav">
+          <a href="subwars.html">
+            <span class="icon"><i class="fas fa-medal"></i></span>
+            <span class="titulo_nav">Subwars</span>
+          </a>
+        </li>
+        <li class="list_nav">
+          <a href="gados-cup.html">
+            <span class="icon"><i class="fas fa-trophy"></i></span>
+            <span class="titulo_nav">Gado's Cup</span>
+          </a>
+        </li>
+        <li class="list_nav">
+          <a href="grupos.html">
+            <span class="icon"><i class="fas fa-comments"></i></span>
+            <span class="titulo_nav">Grupos</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+      
+    <section class="menu_navegacao_1000px">
+      <div>
+        <h1 class="logo_menu">Dudomon</h1>
+        <button id="bnt_mobile"><span id="hamburger"></span></button>
+      </div>
+    </section>
+  </nav>
+  <main>
+    <header class="img_premiados img_config">
+      <h1 class="titulo">Lista de ganhadores da live</h1>
+      <p class="sub_titulo">Aqui você encontra os mvps dos sub Wars e os jogadores sortudos da Lives.</p>
+    </header>
+    <section class="tamanho_maximo">
+      <article class="conteudo">
+        <div class="titulo_post"><h1>Jogadores mvps do Sub Wars</h1></div>
+        <div class="texto_post">
+          <p>Jogadores que participaram do Sub Wars e foram MVP no mês de outubro.
+          </p><br>
+          <div class="lista_mvp_subwars">
+            <ul class="jogadores_mvp_subwars">
+              <!-- aqui onde o js coloca a lista jogadores mvp do subwars -->
+            </ul>
+          </div>
+          <br>
+          <h2 class="center">Sorteador</h2>
+          <p class="center">Sortear 1 jogador entre <a id="numeroDeJogadoresMvp"></a> para ganhar o premiação de um gift card.</p>
+          <div class="sorteador">
+            <button id="bnt-sorteador" onclick="sortearNumero()">Sortear</button>
+            <div id="resultado"></div>
+          </div>
+        </div>
+      </article>
+      <article class="conteudo">
+        <div class="titulo_post"><h1>Lista de premiados da Live</h1></div>
+        <div class="texto_post">
+          <p>Segue a lista do sortudos que ganharam premiação durante a live.
+          </p><br>
+          <div class="tabelas_premiados_live">
+            <table border="1" style="border: 1px solid #202020;" class="jogadoresPremiados">
+              <!-- aqui onde o js coloca a lista jogadores Premiados -->
+            </table>
+          </div>
+        </div>
+      </article>
+      
+    </section>
+    <footer>
+      <div class="alinhamento tamanho_maximo">
+        <h1 class="titulo_rodape">Dudomon</h1>
+          <p class="texto_rodape">Me siga para ficar por dentro de todas as novidades do mundo do Moba Mobile!</p>
+          <ul>
+            <li><a href="https://www.twitch.tv/dudomon" target="_black"><img src="imagens/icon-twitch.png"> Twitch</a></li>
+            <li><a href="https://www.youtube.com/c/dudomon/videos" target="_black"><img src="imagens/icon-youtube.png">Youtube</a></li>
+            <li><a href="https://www.instagram.com/dudomon" target="_black"><img src="imagens/icon-instagram.png">Instagram</a></li>
+            <li><a href="https://twitter.com/dudomon" target="_black"><img src="imagens/icon-twitter.png">Twitter</a></li>
+            <li><a href="https://www.tiktok.com/@dudomonoficial" target="_black"><img src="imagens/icon-tiktok.png">Tiktok</a></li>
+          </ul>
+          <a class="fim" href="https://ryan-santos.github.io/Imersao-CSS/" target="_black">Desenvolvido por Ryan Santos</a>
+      </div>
+      </footer>
+  </main>
+
+  <script src="main.js"></script>
+</body>
