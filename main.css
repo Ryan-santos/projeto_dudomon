@@ -282,7 +282,7 @@ footer ul li a {
   align-items: center;
   margin-top: 15px;
   padding: 5px;
-  border: 2px solid #a19014;
+  border: 1px solid #dbc414;
   border-radius: 5px;
   transition: 300ms;
 }
@@ -307,7 +307,7 @@ footer ul li img{
 }
 
 .destaque {
-  background-color: #464649;
+  background-color: #2e2e30;
   padding: 10px;
   border-radius: 5px;
 }
@@ -358,9 +358,9 @@ footer ul li img{
 }
 
 .lista_mvp_subwars li{
-  background: #3070e78f;
+  background: #2e2e30;
   border-radius: 5px;
-  width: 300px;
+  width: 270px;
   height: 35px;
   margin: 10px;
   padding: 5px;
@@ -369,7 +369,8 @@ footer ul li img{
 }
 
 .lista_mvp_subwars li h5{
-  background-color: #00185bb5;
+  background-color: #dbc414;
+  color: #000;
   border-bottom-left-radius: 5px;
   border-top-left-radius: 5px;
   position: absolute;
@@ -404,27 +405,23 @@ footer ul li img{
   justify-content: center;
   align-items: center;
   margin: 10px;
-  
-
 }
 
 #bnt-sorteador{
-  background: #00185B;
+  background: #dbc414;
+  color: #000;
+  font-size: 1.2rem;
+  font-weight: 900;
   width: 80px;
   height: 40px;
-  font-size: 1.2rem;
   margin-right: 10px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
 }
 
-#bnt-sorteador:hover {
-  background: #3071E7;
-}
-
 #resultado {
-  background: #3070e763;
+  background: #505050;
   width: 40px;
   height: 40px;
   border-radius: 5px;
@@ -441,7 +438,8 @@ footer ul li img{
 }
 
 .tabelas_premiados_live table th {
-  background: #3070e78e;
+  background: #DBC414;
+  color: #000;
   height: 35px;
 }
 

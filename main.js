@@ -23,7 +23,7 @@ bntMobile.addEventListener('click', toggleMenu);
 var listaMvpSubwars = [ 
   {
     Numero: '1',
-    NickName: 'Lucas',
+    NickName: 'Lucas/Nagato',
     data: '15/10',
     Partida: '1º '
   },
