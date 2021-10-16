@@ -23,39 +23,15 @@ bntMobile.addEventListener('click', toggleMenu);
 var listaMvpSubwars = [ 
   {
     Numero: '1',
-    NickName: 'xSuperPerfct',
-    data: '11/10',
-    Partida: '1º Partida'
+    NickName: 'Lucas',
+    data: '15/10',
+    Partida: '1º '
   },
   {
     Numero: '2',
-    NickName: 'xSuperPerfct',
-    data: '11/10',
-    Partida: '2º Partida'
-  },
-  {
-    Numero: '3',
-    NickName: 'xSuperPerfct',
-    data: '12/11',
-    Partida: '1º Partida'
-  },
-  {
-    Numero: '4',
-    NickName: 'xSuperPerfct',
-    data: '20/11',
-    Partida: '2º Partida'
-  },
-  {
-    Numero: '5',
-    NickName: 'xSuperPerfct',
-    data: '11/11',
-    Partida: '1º Partida'
-  },
-  {
-    Numero: '6',
-    NickName: 'xSuperPerfct',
-    data: '11/12',
-    Partida: '2º Partida'
+    NickName: 'FuracaoKatarina',
+    data: '15/10',
+    Partida: '1º '
   }
  ]
 imprimir()
@@ -103,11 +79,10 @@ function sortearNumero(){
 
 
 var listaPreiados = [ ]
-listaPreiados.push(infoPremiado("SuperPerfect","Gift card 30$","08/10/2021","Sub wars"))
-listaPreiados.push(infoPremiado("xSuperPerfect","Gift card 30$","08/10/2021","Sub wars"))
-listaPreiados.push(infoPremiado("xSuperPerfect","Gift card 30$","08/10/2021","Sub wars"))
-listaPreiados.push(infoPremiado("xSuperPerfect","Gift card 30$","08/10/2021","Sub wars"))
-listaPreiados.push(infoPremiado("xSuperPerfect","Gift card 30$","08/10/2021","Sub wars"))
+listaPreiados.push(infoPremiado("a_hela","Gift card 30$","15/10/2021","Sub Wars"))
+listaPreiados.push(infoPremiado("a_kasterborous","Skin AOV","14/10/2021","Meta 3"))
+listaPreiados.push(infoPremiado("xIbson_","Skin AOV","14/10/2021","Meta 2"))
+listaPreiados.push(infoPremiado("ropture","Gift card 15$","14/10/2021","Meta 1"))
 imprimirPremiados()
 
 function infoPremiado(nickName, Premiacao, data, MeioDeGanho) {
