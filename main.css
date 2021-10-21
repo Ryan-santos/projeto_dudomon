@@ -178,6 +178,10 @@ main header  {
   background-image: url('imagens/imagens_topo/imagem-header-home.png');
 }
 
+.img_rifa {
+  background-image: url('imagens/imagens_topo/imagem-header-rifa.png');
+}
+
 .img_premiados {
   background-image: url('imagens/imagens_topo/imagem-header-premiados.png');
 }
@@ -277,6 +281,7 @@ footer ul li a {
   width: 150px;
   font-weight: 700;
   font-size: 1.2rem;
+  color: #ffffff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -387,10 +392,12 @@ footer ul li img{
 
 .lista_mvp_subwars li h6 {
   margin-left: 35px;
+  width: 270px;
   font-size: 1rem;
   font-weight: 400;
   display: flex;
   align-items: center;
+  justify-content: space-evenly;
 }
 
 .lista_mvp_subwars li span {
@@ -449,6 +456,21 @@ footer ul li img{
 
 .tabelas_premiados_live table td {
   height: 35px;
+}
+
+.Especificacoes .celular {
+  display: flex;
+  justify-content: center;
+}
+
+.Especificacoes .celular img {
+  max-width: 600px;
+  width: 100%;
+  height: auto;
+}
+
+.Especificacoes b {
+  color: #DBC414;
 }
 
 @media screen and (max-width: 600px) {

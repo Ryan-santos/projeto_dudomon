@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
     <link rel="stylesheet" href="main.css">
-    <link rel="sortcut icon" href="imagens/logo-site.ico" type="image/x-icon" />
+    <link rel="sortcut icon" href="imagens/logo-barra.ico" type="image/x-icon" />
     <title>Dudomon - Premiados</title>
 </head>
 <body>
@@ -18,6 +18,12 @@
           <a href="index.html">
             <span class="icon"><i class="fas fa-home"></i></span>
             <span class="titulo_nav">Home</span>
+          </a>
+        </li>
+        <li class="list_nav">
+          <a href="rifa.html">
+            <span class="icon"><i class="fas fa-mobile"></i></span>
+            <span class="titulo_nav">Rifa</span>
           </a>
         </li>
         <li class="list_nav active">
@@ -63,11 +69,11 @@
       <article class="conteudo">
         <div class="titulo_post"><h1>MVPs do Sub Wars</h1></div>
         <div class="texto_post">
-          <p>Jogadores que participaram do Sub Wars e foram MVP no mês de outubro.
+          <p>Jogadores que participaram do Sub Wars e foram MVP no mês de <span id="subWarsMes"></span>.
           </p><br>
           <div class="lista_mvp_subwars center">
             <ul>
-              <li><h5>Nº</h5><h6>Nick Name<span>|</span>Data<span>|</span>Partida</h6></li>
+              <li><h5>Nº</h5><h6>Nick jogador<span>|</span>Data<span>|</span>Partida</h6></li>
             </ul>
           </div>
           
@@ -105,7 +111,7 @@
         <h1 class="titulo_rodape">Dudomon</h1>
           <p class="texto_rodape">Me siga para ficar por dentro de todas as novidades do mundo do Moba Mobile!</p>
           <ul>
-            <li><a href="https://www.twitch.tv/dudomon" target="_black"><img src="imagens/icon-twitch.png"> Twitch</a></li>
+            <li><a href="https://twitch.app.link/dudomon" target="_black"><img src="imagens/icon-twitch.png"> Twitch</a></li>
             <li><a href="https://www.youtube.com/c/dudomon/videos" target="_black"><img src="imagens/icon-youtube.png">Youtube</a></li>
             <li><a href="https://www.instagram.com/dudomon" target="_black"><img src="imagens/icon-instagram.png">Instagram</a></li>
             <li><a href="https://twitter.com/dudomon" target="_black"><img src="imagens/icon-twitter.png">Twitter</a></li>
@@ -115,6 +121,6 @@
       </div>
       </footer>
   </main>
-
   <script src="main.js"></script>
+  <script src="dados.js"></script>
 </body>
