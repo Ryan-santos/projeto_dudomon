@@ -90,6 +90,7 @@ a {
 #menu_navegacao .menu_navegacao_pc ul li.active:hover a span i,
 #menu_navegacao .menu_navegacao_pc ul li.active:hover a span{
   color: #000;
+  font-weight: 600;
 }
 
 #menu_navegacao .menu_navegacao_pc ul li:hover a span i,
@@ -208,7 +209,7 @@ header .titulo{
   font-family: 'PT Serif', serif;
   font-size: 2.5rem;
   text-align: center;
-  color: #DBC414;
+  color: #FFD11D;
   text-shadow: 2px 2px 2px rgb(0 0 0);
 }
 
@@ -271,7 +272,7 @@ margin: auto;
 }
 
 .conteudo .texto_post h2 {
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   font-weight: 700;
 }
 
@@ -287,7 +288,7 @@ footer ul li a {
   align-items: center;
   margin-top: 15px;
   padding: 5px;
-  border: 1px solid #dbc414;
+  border: 1px solid #FFD11D;
   border-radius: 5px;
   transition: 300ms;
 }
@@ -298,12 +299,13 @@ footer ul li a {
 
 .bnt_link:hover,
 footer ul li a:hover{
-  background: #dbc414;
+  background: #FFD11D;
 }
 
 .bnt_link img,
 .bnt_sem_link img,
 .icon_img img,
+.bnt_link i,
 footer ul li img{
   width: 30px;
   height: auto;
@@ -317,7 +319,8 @@ footer ul li img{
   border-radius: 5px;
 }
 
-.destaque h2 {
+.destaque h2,
+.sub_titulo_conteudo h2 {
   color: #FFD11D;
   display: flex;
   align-items: center;
@@ -331,10 +334,17 @@ footer ul li img{
   text-align: center;
 }
 
-.conteudo_imagens{
+.conteudo_imagens,
+.formas-pagamentos,
+.button-certer,
+.conteiner_input_jogador,
+.legenda_times,
+.conteiner_times {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
 }
 
 .conteudo_imagens img{
@@ -348,14 +358,14 @@ footer ul li img{
 .conteiner_grupos {
   display: flex;
   justify-content: center;
-    flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .conteiner_grupos a {
   margin: 10px;
 }
 
-/* lista dos mvos subwars */
+/* lista dos mvps subwars */
 .lista_mvp_subwars ul {
   display: flex;
   flex-wrap: wrap;
@@ -374,7 +384,7 @@ footer ul li img{
 }
 
 .lista_mvp_subwars li h5{
-  background-color: #dbc414;
+  background-color: #FFD11D;
   color: #000;
   border-bottom-left-radius: 5px;
   border-top-left-radius: 5px;
@@ -415,7 +425,7 @@ footer ul li img{
 }
 
 #bnt-sorteador{
-  background: #dbc414;
+  background: #FFD11D;
   color: #000;
   font-size: 1.2rem;
   font-weight: 900;
@@ -445,7 +455,7 @@ footer ul li img{
 }
 
 .tabelas_premiados_live table th {
-  background: #DBC414;
+  background: #FFD11D;
   color: #000;
   height: 35px;
 }
@@ -456,21 +466,6 @@ footer ul li img{
 
 .tabelas_premiados_live table td {
   height: 35px;
-}
-
-.Especificacoes .celular {
-  display: flex;
-  justify-content: center;
-}
-
-.Especificacoes .celular img {
-  max-width: 600px;
-  width: 100%;
-  height: auto;
-}
-
-.Especificacoes b {
-  color: #DBC414;
 }
 
 @media screen and (max-width: 600px) {
@@ -485,10 +480,233 @@ footer ul li img{
  }
 }
 
+/* estilizacao rifa */
+.Especificacoes .celular {
+  display: flex;
+  justify-content: center;
+}
+
+.Especificacoes .celular img {
+  max-width: 600px;
+  width: 100%;
+  height: auto;
+}
+
+.Especificacoes b {
+  color: #FFD11D;
+}
+
+/* estilizacao formulario gados cup */
+.inscricoes-gados-cup h1 {
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+.inscricoes-gados-cup p {
+  font-style: italic;
+}
+
+.inscricoes-gados-cup .input_nome_time input,
+.inscricoes-gados-cup .input_nome_jogador input,
+.inscricoes-gados-cup .input_numero_wtp input {
+  margin-top: 7px;
+  width: 100%;
+  max-width: 25rem;
+  height: 30px;
+  border: 2px solid #18181B;
+  border-radius: 5px;
+  background: none;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.inscricoes-gados-cup .conteiner_input_jogador div{
+  margin: 10px;
+}
+
+.inscricoes-gados-cup .input_nome_jogador {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.inscricoes-gados-cup .input_nome_jogador h3 {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.inscricoes-gados-cup .input_nome_jogador input,
+.inscricoes-gados-cup .input_numero_wtp input {
+  margin-top: 2px;
+  max-width: 13rem;
+}
+
+.inscricoes-gados-cup .input_nome_time input:focus-visible,
+.inscricoes-gados-cup .input_nome_jogador input:focus-visible,
+.inscricoes-gados-cup .input_numero_wtp input:focus-visible {
+  border-color: #FFD11D;
+  outline: none;
+}
+
+.inscricoes-gados-cup .button_inscricoes-gados-cup {
+  margin: 5px 0px;
+  padding: 5px;
+  background: #FFD11D;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.3rem;
+  text-align: center;
+  font-weight: 600;
+  white-space: normal;
+  color: #000;
+  cursor: pointer;
+  transition: 500ms;
+}
+
+.inscricoes-gados-cup .button_inscricoes-gados-cup:hover {
+  background: #000;
+  color: #FFD11D;
+}
+
+.inscricoes-gados-cup .aviso_de_inscricao i,
+.inscricoes-gados-cup .inscricao_encerrada i {
+  color: #FFD11D;
+  font-size: 3rem;
+  padding: 1.3rem;
+}
+
+.inscricoes-gados-cup .aviso_de_inscricao h6 i,
+.inscricoes-gados-cup .inscricao_encerrada h6 i {
+  font-size: 8rem;
+}
+
+.post_MVPsSubWars,
+.formulario,
+.aviso_de_inscricao,
+.inscricao_encerrada {
+  display: none;
+}
+
+.ativado {
+  display: block;
+}
+
+/* estilizacao formas de pagamento gados cup */
+.formas-pagamentos .pagamento {
+  width: 290px;
+  margin: 10px;
+  padding: 10px;
+  border: 3px solid #2E2E30;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.formas-pagamentos .cor-pagamento {
+  width: calc(100% + 20px);
+  height: 50px;
+  margin: -11px -21px;
+  background: #2E2E30;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+}
+
+.formas-pagamentos p {
+  margin-top: 20px;
+  word-break: break-all;
+}
+
+/* estilizacao times gados cup*/
+.legenda_times h3 {
+  width: 7.5rem;
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.conteiner_times .time {
+  max-width: 20rem;
+  width: 100%;
+  height: auto;
+  margin: 1rem;
+  background: #2e2e30;
+  border-radius: 5px;
+}
+
+.conteiner_times .time .titulo_time {
+  width: 100%;
+  min-height: 35px;
+  padding: 5px;
+  background: #FFD11D;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+}
+
+.conteiner_times .time .titulo_time h2 {
+  width: 50px;
+  margin-right: 10px;
+  color: #000;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+.conteiner_times .time .titulo_time h3 {
+  width: 100%;
+  color: #000;
+  font-size: 1.1rem;
+  word-break: break-all;
+}
+
+.conteiner_times .time li {
+  height: 40px;
+  padding: 4px;
+  border-top: 3px solid #18181B;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+}
+
+.conteiner_times .time .sem-border {
+  border: none;
+}
+
+.conteiner_times .time li span {
+  height: 40px;
+  margin: 0px 10px 0px 0px;
+  border-right: 3px solid #18181b;
+}
+
+.carregando_animacao {
+  width: 5rem;
+  height: 5rem;
+  border: 7px solid #2E2E30;
+  border-top-color: #FFD11D;
+  border-bottom-color: #FFD11D;
+  border-radius: 50%;
+  display: flex;
+  animation: is-rotating 1s infinite;
+}
+
+@keyframes is-rotating {
+  to {
+    transform: rotate(1turn);
+  }
+}
+
 
 footer {
   background: #000000;
-  
 }
 
 footer .alinhamento {

@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
     <link rel="stylesheet" href="main.css">
     <link rel="sortcut icon" href="imagens/logo-barra.ico" type="image/x-icon" />
-    <title>Dudomon - Premiados</title>
+    <title>Dudomon - Gado's Cup</title>
 </head>
 <body>
   <nav id="menu_navegacao">
@@ -26,7 +26,7 @@
             <span class="titulo_nav">Rifa</span>
           </a>
         </li>
-        <li class="list_nav active">
+        <li class="list_nav">
           <a href="premiados.html">
             <span class="icon"><i class="fas fa-search-dollar"></i></span>
             <span class="titulo_nav">Premiados</span>
@@ -38,7 +38,7 @@
             <span class="titulo_nav">Subwars</span>
           </a>
         </li>
-        <li class="list_nav">
+        <li class="list_nav active">
           <a href="gados-cup.html">
             <span class="icon"><i class="fas fa-trophy"></i></span>
             <span class="titulo_nav">Gado's Cup</span>
@@ -61,48 +61,28 @@
     </section>
   </nav>
   <main>
-    <header class="img_premiados img_config">
-      <h1 class="titulo">Ganhadores da live</h1>
-      <p class="sub_titulo">Aqui você encontra os mvps dos sub Wars e os jogadores sortudos da Lives.</p>
+    <header class="img_gadoscup img_config">
+      <h1 class="titulo">Gado's Cup</h1>
+      <p class="sub_titulo">Aqui você encontra as informações sobre a Gado's Cup.</p>
     </header>
     <section class="tamanho_maximo">
-      <article class="conteudo post_MVPsSubWars ativado">
-        <div class="titulo_post"><h1>MVPs do Sub Wars</h1></div>
+      <article class="conteudo">
+        <div class="titulo_post"><h1>O que é ?</h1></div>
         <div class="texto_post">
-          <p>Jogadores que participaram do Sub Wars e foram MVP no mês de <span id="subWarsMes"></span>.
-          </p><br>
-          <div class="lista_mvp_subwars center">
-            <ul>
-              <li><h5>Nº</h5><h6>Nick jogador<span>|</span>Data<span>|</span>Partida</h6></li>
-            </ul>
-          </div>
-          <br>
-          <div class="lista_mvp_subwars">
-            <ul class="jogadores_mvp_subwars">
-              <!-- aqui onde o js coloca a lista jogadores mvp do subwars -->
-              <div><div class="carregando_animacao"></div><br> Carregando</div>
-            </ul>
-          </div>
-          <br>
-          <h2 class="center">Sorteador</h2>
-          <p class="center">Sortear 1 jogador entre <a id="numeroDeJogadoresMvp"></a> para ganhar a premiação de um gift card.</p>
-          <div class="sorteador">
-            <button id="bnt-sorteador" onclick="sortearNumero()">Sortear</button>
-            <div id="resultado"></div>
-          </div>
+          <p>A gado's Cup e um campeonato amador organizando pelo dudomon, com premiação em dinheiro, todo o Valor Das inscrições será convertido em premiação. São oito vagas paras times Com 5 jogadores e 1 reserva.
+          </p>
         </div>
       </article>
       <article class="conteudo">
-        <div class="titulo_post"><h1>Premiados da Live</h1></div>
+        <div class="titulo_post"><h1>Inscrições</h1></div>
         <div class="texto_post">
-          <p>Segue a lista dos sortudos que ganharam premiação durante a live.
-          </p><br>
-          <div class="tabelas_premiados_live">
-            <table border="1" style="border: 1px solid #202020;" class="jogadoresPremiados">
-              <!-- aqui onde o js coloca a lista jogadores Premiados -->
-              <td><div class="carregando_animacao"></div></td>
-            </table>
+          <br>
+          <div class="center">
+            <img src="imagens/icons8-em-breve-100.png" alt="">
           </div>
+          <br>
+          <p class="center">Em breve teremos a 2° edição da Gado's Cup
+          </p>
         </div>
       </article>
       
@@ -122,6 +102,6 @@
       </div>
       </footer>
   </main>
+
   <script src="main.js"></script>
-  <script src="dados-premiados.js"></script>
 </body>
