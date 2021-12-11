@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="sortcut icon" href="imagens/logo-barra.ico" type="image/x-icon" />
+    <title>Dudomon - Gado's Cup</title>
+</head>
+<body>
+  <nav id="menu_navegacao">
+    <section class="menu_navegacao_pc">
+      <ul>
+        <h1 class="logo_menu">Dudomon</h1>
+        <li class="list_nav">
+          <a href="index.html">
+            <span class="icon"><i class="fas fa-home"></i></span>
+            <span class="titulo_nav">Home</span>
+          </a>
+        </li>
+        <li class="list_nav">
+          <a href="rifa.html">
+            <span class="icon"><i class="fas fa-mobile"></i></span>
+            <span class="titulo_nav">Rifa</span>
+          </a>
+        </li>
+        <li class="list_nav">
+          <a href="premiados.html">
+            <span class="icon"><i class="fas fa-search-dollar"></i></span>
+            <span class="titulo_nav">Premiados</span>
+          </a>
+        </li>
+        <li class="list_nav">
+          <a href="subwars.html">
+            <span class="icon"><i class="fas fa-medal"></i></span>
+            <span class="titulo_nav">Subwars</span>
+          </a>
+        </li>
+        <li class="list_nav active">
+          <a href="gados-cup.html">
+            <span class="icon"><i class="fas fa-trophy"></i></span>
+            <span class="titulo_nav">Gado's Cup</span>
+          </a>
+        </li>
+        <li class="list_nav">
+          <a href="grupos.html">
+            <span class="icon"><i class="fas fa-comments"></i></span>
+            <span class="titulo_nav">Grupos</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+      
+    <section class="menu_navegacao_1000px">
+      <div>
+        <h1 class="logo_menu">Dudomon</h1>
+        <button id="bnt_mobile"><span id="hamburger"></span></button>
+      </div>
+    </section>
+  </nav>
+  <main>
+    <header class="img_gadoscup img_config">
+      <h1 class="titulo">Gado's Cup</h1>
+      <p class="sub_titulo">Aqui você encontra as informações sobre a Gado's Cup.</p>
+    </header>
+    <section class="tamanho_maximo">
+      <article class="conteudo">
+        <div class="titulo_post"><h1>O que é ?</h1></div>
+        <div class="texto_post">
+          <p>A gado's Cup e um campeonato amador organizando pelo dudomon, com premiação em dinheiro, todo o Valor Das inscrições será convertido em premiação. São oito vagas paras times Com 5 jogadores e 1 reserva.</p>
+          <br>
+          <b>As qualificações vão ser:</b>
+          <p>Oitavos de final > MD1</p>
+          <p>Quartas de final > MD1</p>
+          <p>Semifinal > MD3</p>
+          <p>Final > MD5</p>
+          <br>
+          <p>As inscrições tem uma taxa de R$50 por time, a premiação do campeonato e de R$400.</p>
+        </div>
+      </article>
+      <article id="Inscricao" class="conteudo">
+        <div class="titulo_post"><h1>Inscrições</h1></div>
+        <div class="texto_post">
+          <p>Para se inscrever para a gado's Cup e importante que  já tenha um time formado por 5 jogadores + 1 reserva, as inscrições dos times tem um custo de 50 reais por time, e só serão aprovados os times que pagarem.</p>
+          <br>
+          <div class="destaque">
+            <h2 class="icon_img"><img src="imagens/icon-importante.png"> Importante</h2><br>
+            <ul>
+              <li>É obrigatório um jogador reserva.</li><br>
+              <li>O valor da taxa tem que ser pago inteiro por um pessoa.</li><br>
+              <li>É obrigatório colocar o nome do time na descrição do pagamento.</li><br>
+              <li>O nome do time não pode ser ofensivo.</li><br>
+            </ul>
+          </div>
+          <br>
+          <p>Preencha as informações corretamente do seu Time a seguir.</p>
+          <br>
+          <div class="destaque inscricoes-gados-cup">
+            <iframe name="dummyframe" id="dummyframe" style="display: none;"></iframe>
+            <form action="https://dodos-api-formulario.herokuapp.com/" method="post" class="formulario ativado" onsubmit='avisoInscricao()' target="dummyframe">
+              <h1 class="center">Nome do time</h1>
+              <p class="center">Preencha a seguir com o nome do seu time com ate 30 caracteres.</p>
+              <div class="center input_nome_time"><input type="text" name="NomeTime" placeholder="Ex: Os gadinhos 123b" maxlength="30" required></div>
+              <br>
+              <h1 class="center">Jogadores</h1>
+              <p class="center">Preencha a seguir com o Nick do jogador mais ID deacordo com a rota.</p>
+              <br>
+              <div class="conteiner_input_jogador">
+                <div class="center input_nome_jogador icon_img"><h3><img src="imagens/icones-lenes-gadosCup/icon-jg.png">Jungle</h3><input type="text" name="JogadorJungle" placeholder="Ex: Ibison#123" maxlength="25" required></div>
+                <div class="center input_nome_jogador icon_img"><h3><img src="imagens/icones-lenes-gadosCup/icon-top.png">Topo</h3><input type="text" name="JogadorTopo" placeholder="Ex: Dudomon#123" maxlength="25" required></div>
+                <div class="center input_nome_jogador icon_img"><h3><img src="imagens/icones-lenes-gadosCup/icon-mid.png">Meio</h3><input type="text" name="JogadorMeio" placeholder="Ex: xNicolas#123" maxlength="25" required></div>
+                <div class="center input_nome_jogador icon_img"><h3><img src="imagens/icones-lenes-gadosCup/icon-adc.png">Atirador</h3><input type="text" name="JogadorAtirador" placeholder="Ex: xSuperPerfect#123" maxlength="25" required></div>
+                <div class="center input_nome_jogador icon_img"><h3><img src="imagens/icones-lenes-gadosCup/icon-sup.png">Suporte</h3><input type="text" name="JogadorSuporte" placeholder="Ex: xChoki#123" maxlength="25" required></div>
+                <div class="center input_nome_jogador icon_img"><h3><img src="imagens/icones-lenes-gadosCup/icon-reserva.png">Reserva</h3><input type="text" name="JogadorReserva" placeholder="Ex: Kaster#123" maxlength="25" required></div>
+              </div>
+              <br>
+              <h1 class="center">Forma de contato</h1>
+              <p class="center">Preencha a seguir com o seu numero do Whatsapp para entrarmos em contato com você caso necessário.</p>
+              <div class="center input_numero_wtp icon_img"><input type="tel" onkeypress="return event.charCode >= 48 && event.charCode <= 57" name="numeroWhatsapp" placeholder="Ex: 11 912312321" minlength="11" maxlength="11" required></div>
+              <br>
+              <div class="button-certer"><input type="submit" id="inscricaoTime" class="button_inscricoes-gados-cup" value="Reservar inscrição"></div>
+            </form>
+            <div class="center aviso_de_inscricao">
+                <h6><i class="fas fa-clipboard-check"></i></h6>
+                <h1>Time inscrito com sucesso!</h1>
+                <p>Agora para que seu time seja aprovado faça o pagamento da taxa.</p>
+                <i class="fas fa-arrow-down"></i>
+            </div>
+            <div class="center inscricao_encerrada">
+              <h6><i class="fas fa-frown"></i></h6>
+              <h1>inscrições encerradas!</h1>
+              <p>Que pena, infelizmente as inscrições ja se encerraram.</p>
+            </div>
+          </div>
+          <br>
+          <br>
+          <div class="icon_img img sub_titulo_conteudo"><h2><img src="imagens/icon-moeda.png"> Pagamento</h2></div>
+          <br>
+          <p>Após feita a reserva do seu time, agora você deve efetuar o pagamento da taxa para que seu time seja aprovado, escolha uma das formas de pagamento a seguir para pagar a taxa, <mark> é muito importante que na descrição do pagamento você coloque o nome do seu time,</mark> pois assim saberemos qual inscrição de time está sendo pago.</p>
+          <br>
+          <p class="center">A taxa e de 50 reais.</p>
+          <div class="formas-pagamentos">
+            <div class="pagamento"><div class="cor-pagamento"><img src="imagens/pix-logo.png" alt="Pix"></div><p>contatodudomon@gmail.com</p></div>
+            <div class="pagamento"><div class="cor-pagamento"><img src="imagens/picpay-logo.png" alt="PicPay"></div><p>@dudomon</p></div>
+          </div>
+          <br><br>
+          <div class="icon_img img sub_titulo_conteudo"><h2><img src="imagens/icon-duvida.png"> Duvidas ?</h2></div>
+          <br>
+          <p>Caso tenha alguma dúvida sobre as inscrições entre em contato com com a gente através do nosso canal de dúvidas do Discord.</p>
+          <a class="bnt_link" href="https://discord.gg/GgswaGPf" target="_black"><img src="imagens/icon-discord.png"> Discord</a>
+        </div>
+      </article>
+
+      <article id="times" class="conteudo">
+        <div class="titulo_post"><h1>Times</h1></div>
+        <div class="texto_post">
+          <p>Times confirmados para jogar a gado's cup.</p>
+          <br>
+          <div class="icon_img legenda_times">
+            <h3><img src="imagens/icones-lenes-gadosCup/icon-jg.png">Jungle</h3>
+            <h3><img src="imagens/icones-lenes-gadosCup/icon-top.png">Topo</h3>
+            <h3><img src="imagens/icones-lenes-gadosCup/icon-mid.png">Meio</h3>
+            <h3><img src="imagens/icones-lenes-gadosCup/icon-adc.png">Atirador</h3>
+            <h3><img src="imagens/icones-lenes-gadosCup/icon-sup.png">Suporte</h3>
+            <h3><img src="imagens/icones-lenes-gadosCup/icon-reserva.png">Reserva</h3>
+          </div>
+          <br>
+          <div class="conteiner_times icon_img">
+            <!-- aqui onde o js coloca a lista dos times da gados cup -->
+            <div><div class="carregando_animacao"></div><br> Carregando</div>
+          </div>
+        </div>
+      </article>
+      
+    </section>
+    <footer>
+      <div class="alinhamento tamanho_maximo">
+        <h1 class="titulo_rodape">Dudomon</h1>
+          <p class="texto_rodape">Me siga para ficar por dentro de todas as novidades do mundo do Moba Mobile!</p>
+          <ul>
+            <li><a href="https://twitch.app.link/dudomon" target="_black"><img src="imagens/icon-twitch.png"> Twitch</a></li>
+            <li><a href="https://www.youtube.com/c/dudomon/videos" target="_black"><img src="imagens/icon-youtube.png">Youtube</a></li>
+            <li><a href="https://www.instagram.com/dudomon" target="_black"><img src="imagens/icon-instagram.png">Instagram</a></li>
+            <li><a href="https://twitter.com/dudomon" target="_black"><img src="imagens/icon-twitter.png">Twitter</a></li>
+            <li><a href="https://www.tiktok.com/@dudomonoficial" target="_black"><img src="imagens/icon-tiktok.png">Tiktok</a></li>
+          </ul>
+          <a class="fim" href="https://ryan-santos.github.io/Imersao-CSS/" target="_black">Desenvolvido por Ryan Santos</a>
+      </div>
+      </footer>
+  </main>
+
+  <script src="main.js"></script>
+  <script src="dados_gados_cup.js"></script>
+</body>

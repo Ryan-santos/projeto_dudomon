@@ -1,18 +1,19 @@
 
-async function fetchDadosSubWars() {
+async function fetchDados() {
     try {
-        const response = await fetch('https://dodos-api-mvps-sub-wars.herokuapp.com/')
+        const response = await fetch('https://dodos-api-premiados-dudomon.herokuapp.com/')
         const data = await response.json()
-        var dadosMvpSubwars = data['values']
-        imprimir(dadosMvpSubwars)
+        var dadosMvpSubwars = data[0].values
+        var dadosPremiados = data[1].values.reverse()
+        imprimirMvpSubwars(dadosMvpSubwars)
+        imprimirPremiados(dadosPremiados)
     } catch (error) {
       console.log(error)
     }
 }
+fetchDados()
 
-fetchDadosSubWars()
-
-function imprimir(dadosMvpSubwars) {
+function imprimirMvpSubwars(dadosMvpSubwars) {
       var div = document.querySelector('.jogadores_mvp_subwars')
       div.innerHTML = ""
 
@@ -51,25 +52,8 @@ function sortearNumero(){
 }  
 
 
-
-
-
-
-/* funcao para pegar os dados da planilha premiados */
-async function fetchDadosPreiados() {
-  try {
-      const response = await fetch('https://dodos-api-ganhadores.herokuapp.com/')
-      const data = await response.json()
-      var dadosPreiados = data['values'].slice(0).reverse()
-      imprimirPremiados(dadosPreiados)
-  } catch (error) {
-    console.log(error)
-  }
-}
-
-fetchDadosPreiados()
-
-function imprimirPremiados(dadosPreiados) {
+/* funcao para imprimir os dados da planilha premiados Pagina2 */
+function imprimirPremiados(dadosPremiados) {
     var div = document.querySelector('.jogadoresPremiados')
     div.innerHTML = ""
 
@@ -95,8 +79,8 @@ function imprimirPremiados(dadosPreiados) {
 
     div.appendChild(tagTr1)
 
-    for (var x = 0; x < dadosPreiados.length; x++) {
-      var listaPreiados = dadosPreiados[x]
+    for (var x = 0; x < dadosPremiados.length; x++) {
+      var listaPreiados = dadosPremiados[x]
 
       let tagTr = document.createElement('tr')
       
@@ -120,5 +104,4 @@ function imprimirPremiados(dadosPreiados) {
       
       div.appendChild(tagTr)
   }
-
 }

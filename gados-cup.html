@@ -76,94 +76,13 @@
       <article class="conteudo">
         <div class="titulo_post"><h1>Inscrições</h1></div>
         <div class="texto_post">
-          <p>Para se inscrever para a gado's Cup e importante que  já tenha um time formado por 5 jogadores + 1 reserva, as inscrições dos times tem um custo de 50 reais por time, e só serão aprovados os times que pagarem.</p>
           <br>
-          <div class="destaque">
-            <h2 class="icon_img"><img src="imagens/icons8-atenção-48.png"> Importante</h2><br>
-            <li>É obrigatório um jogador reserva.</li><br>
-            <li>O valor da taxa tem que ser pago inteiro por um pessoa.</li><br>
-            <li>É obrigatório colocar o nome do time na descrição do pagamento.</li><br>
-            <li>O nome do time não pode ser ofensivo.</li><br>
+          <div class="center">
+            <img src="imagens/icon-emBreve.png" alt="">
           </div>
           <br>
-          <p>Preencha as informações corretamente do seu Time a seguir.</p>
-          <br>
-          <div class="destaque inscricoes-gados-cup">
-            <iframe name="dummyframe" id="dummyframe" style="display: none;"></iframe>
-            <form action="https://dodos-api-formulario.herokuapp.com/" method="post" class="formulario ativado" onsubmit='avisoInscricao()' target="dummyframe">
-              <h1 class="center">Nome do time</h1>
-              <p class="center">Preencha a seguir com o nome do seu time com ate 30 caracteres.</p>
-              <div class="center input_nome_time"><input type="text" name="NomeTime" placeholder="Ex: Os gadinhos 123b" maxlength="30" required></div>
-              <br>
-              <h1 class="center">Jogadores</h1>
-              <p class="center">Preencha a seguir com o Nick do jogador mais ID deacordo com a rota.</p>
-              <br>
-              <div class="conteiner_input_jogador">
-                <div class="center input_nome_jogador icon_img"><h3><img src="imagens/icon-jg.png">Jungle</h3><input type="text" name="JogadorJungle" placeholder="Ex: Ibison#123" maxlength="25" required></div>
-                <div class="center input_nome_jogador icon_img"><h3><img src="imagens/icon-top.png">Topo</h3><input type="text" name="JogadorTopo" placeholder="Ex: Dudomon#123" maxlength="25" required></div>
-                <div class="center input_nome_jogador icon_img"><h3><img src="imagens/icon-mid.png">Meio</h3><input type="text" name="JogadorMeio" placeholder="Ex: xNicolas#123" maxlength="25" required></div>
-                <div class="center input_nome_jogador icon_img"><h3><img src="imagens/icon-adc.png">Atirador</h3><input type="text" name="JogadorAtirador" placeholder="Ex: xSuperPerfect#123" maxlength="25" required></div>
-                <div class="center input_nome_jogador icon_img"><h3><img src="imagens/icon-sup.png">Suporte</h3><input type="text" name="JogadorSuporte" placeholder="Ex: xChoki#123" maxlength="25" required></div>
-                <div class="center input_nome_jogador icon_img"><h3><img src="imagens/icon-reserva.png">Reserva</h3><input type="text" name="JogadorReserva" placeholder="Ex: Kaster#123" maxlength="25" required></div>
-              </div>
-              <br>
-              <h1 class="center">Forma de contato</h1>
-              <p class="center">Preencha a seguir com o seu numero do Whatsapp para entrarmos em contato com você caso necessário.</p>
-              <div class="center input_numero_wtp icon_img"><input type="tel" onkeypress="return event.charCode >= 48 && event.charCode <= 57" name="numeroWhatsapp" placeholder="Ex: 11 912312321" minlength="11" maxlength="11" required></div>
-              <br>
-              <div class="button-certer"><input type="submit" id="inscricaoTime" class="button_inscricoes-gados-cup" value="Reservar inscrição"></div>
-            </form>
-            <div class="center aviso_de_inscricao">
-                <h6><i class="fas fa-clipboard-check"></i></h6>
-                <h1>Time inscrito com sucesso!</h1>
-                <p>Agora para que seu time seja aprovado faça o pagamento da taxa.</p>
-                <i class="fas fa-arrow-down"></i>
-            </div>
-            <div class="center inscricao_encerrada">
-              <h6><i class="fas fa-frown"></i></h6>
-              <h1>inscrições encerradas !</h1>
-              <p>Que pena, infelizmente as inscrições ja se encerraram.</p>
-            </div>
-          </div>
-          <br>
-          <br>
-          <div class="icon_img img sub_titulo_conteudo"><h2><img src="imagens/icon-moeda.png"> Pagamento</h2></div>
-          <br>
-          <p>Após feita a reserva do seu time, agora você deve efetuar o pagamento da taxa para que seu time seja aprovado!</p>
-          <br>
-          <p>Escolha uma das formas de pagamento a seguir para pagar a taxa, é muito importante que na descrição do pagamento você coloque o nome do seu time, pois assim saberemos qual inscrição de time está sendo pago.</p>
-          <br>
-          <p class="center">A taxa e de 50 reais.</p>
-          <div class="formas-pagamentos">
-            <div class="pagamento"><div class="cor-pagamento"><img src="imagens/pix-106.png" alt="Pix"></div><p>contatodudomon@gmail.com</p></div>
-            <div class="pagamento"><div class="cor-pagamento"><img src="imagens/picpay-44.png" alt="PicPay"></div><p>@dudomon</p></div>
-          </div>
-          <br><br>
-          <div class="icon_img img sub_titulo_conteudo"><h2><img src="imagens/icon-pergunta.png"> Duvidas ?</h2></div>
-          <br>
-          <p>Caso tenha alguma dúvida sobre as inscrições entre em contato com com a gente através do nosso canal de dúvidas do Discord.</p>
-          <a class="bnt_link" href="https://discord.gg/GgswaGPf" target="_black"><img src="imagens/icon-discord.png"> Discord</a>
-        </div>
-      </article>
-
-      <article class="conteudo">
-        <div class="titulo_post"><h1>Times</h1></div>
-        <div class="texto_post">
-          <p>Times confirmados para jogar a gado's cup.</p>
-          <br>
-          <div class="icon_img legenda_times">
-            <h3><img src="imagens/icon-jg.png">Jungle</h3>
-            <h3><img src="imagens/icon-top.png">Topo</h3>
-            <h3><img src="imagens/icon-mid.png">Meio</h3>
-            <h3><img src="imagens/icon-adc.png">Atirador</h3>
-            <h3><img src="imagens/icon-sup.png">Suporte</h3>
-            <h3><img src="imagens/icon-reserva.png">Reserva</h3>
-          </div>
-          <br>
-          <div class="conteiner_times icon_img">
-            <!-- aqui onde o js coloca a lista dos times da gados cup -->
-            <div><div class="carregando_animacao"></div><br> Carregando</div>
-          </div>
+          <p class="center">Em breve teremos a 2° edição da Gado's Cup
+          </p>
         </div>
       </article>
       
@@ -185,5 +104,4 @@
   </main>
 
   <script src="main.js"></script>
-  <script src="dados_gados_cup.js"></script>
 </body>

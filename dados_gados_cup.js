@@ -1,19 +1,16 @@
 
 const formulario = document.querySelector('.formulario');
 const avisoDeInscricao = document.querySelector('.aviso_de_inscricao');
-
 function avisoInscricao() { 
   formulario.classList.remove('ativado');
   avisoDeInscricao.classList.add('ativado');
-  console.log("enviou")
 };
 
 
 async function fetchDadosTimes() {
   try {
       const response = await fetch('https://dodos-api-times.herokuapp.com/')
-      const data = await response.json()
-      var dadosTimesGadosCup = data['values']
+      const dadosTimesGadosCup = await response.json()
       imprimirtimes(dadosTimesGadosCup)
       inscricaoFechada(dadosTimesGadosCup)
   } catch (error) {
@@ -84,12 +81,12 @@ function imprimirtimes(dadosTimesGadosCup) {
       tagDiv.classList.add('titulo_time')
       tagLi1.classList.add('sem-border')
 
-      tagImgJG.src = 'imagens/icon-jg.png'
-      tagImgTOP.src = 'imagens/icon-top.png'
-      tagImgMID.src = 'imagens/icon-mid.png'
-      tagImgADC.src = 'imagens/icon-adc.png'
-      tagImgSUP.src = 'imagens/icon-sup.png'
-      tagImgRESERV.src = 'imagens/icon-reserva.png'
+      tagImgJG.src = 'imagens/icones-lenes-gadosCup/icon-jg.png'
+      tagImgTOP.src = 'imagens/icones-lenes-gadosCup/icon-top.png'
+      tagImgMID.src = 'imagens/icones-lenes-gadosCup/icon-mid.png'
+      tagImgADC.src = 'imagens/icones-lenes-gadosCup/icon-adc.png'
+      tagImgSUP.src = 'imagens/icones-lenes-gadosCup/icon-sup.png'
+      tagImgRESERV.src = 'imagens/icones-lenes-gadosCup/icon-reserva.png'
 
 
       tagDiv.appendChild(tagH2)
@@ -132,7 +129,6 @@ function imprimirtimes(dadosTimesGadosCup) {
 };
 
 const inscricaoEncerrada = document.querySelector('.inscricao_encerrada');
-
 function inscricaoFechada(dadosTimesGadosCup) {
   if (dadosTimesGadosCup.length >= 8){
     formulario.classList.remove('ativado');
