@@ -15,6 +15,7 @@ async function fetchDadosTimes() {
       inscricaoFechada(dadosTimesGadosCup)
   } catch (error) {
     console.log(error)
+    document.querySelector('.conteiner_times').innerHTML="Nenhum time confirmado para a Gado's Cup no momento !"
   }
 }
 
